@@ -7,6 +7,7 @@ import {
 import Character from '../Character';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import ControlPane from '../ControlPane';
+import BCGPerspective from '../BCGPerspective'
 
 import {
   bodyOptions,
@@ -29,6 +30,8 @@ function App() {
   );
 
   return (
+    <>
+    <BCGPerspective />
     <main className={styles.characterEditor}>
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
@@ -89,6 +92,7 @@ function App() {
         />
       </div>
     </main>
+    </>
   );
 }
 
